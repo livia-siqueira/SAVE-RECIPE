@@ -9,7 +9,8 @@ export function MealList(props) {
             props.navigation.navigate({
                 routeName: 'MealsDetails',
                 params: {
-                    mealId: item.item.id
+                    mealId: item.item.id,
+                    mealTitle: item.item.title
                 }
             })
         }} />
