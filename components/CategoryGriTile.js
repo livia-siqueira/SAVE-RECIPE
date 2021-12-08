@@ -9,7 +9,7 @@ import {
   Button,
   TouchableNativeFeedback,
 } from "react-native";
-
+import { useSelector } from "react-redux";
 export default function CategoryGridTile(props) {
   let TouchableComponent = TouchableOpacity;
 
@@ -17,6 +17,7 @@ export default function CategoryGridTile(props) {
     TouchableComponent = TouchableNativeFeedback;
   }
 
+ 
   return (
     <View style={styles.gridItem}>
       <TouchableComponent style={{ flex: 1 }} onPress={props.onPress}>

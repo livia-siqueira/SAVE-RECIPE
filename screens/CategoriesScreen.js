@@ -20,8 +20,8 @@ export default function CategoriesScreen(props) {
             <CategoryGridTile
                 title={item.item.title}
                 color={item.item.color}
+                id={item.item.id}
                 onPress={() => {
-                    console.log("entrou aqui");
                     props.navigation.navigate({
                         routeName: "CategoryMeals",
                         params: {
