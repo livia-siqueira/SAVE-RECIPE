@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font'
 import MealsNavigation from './navigation/MailsNavigation';
-import {useScreens} from 'react-native-screens'
 
 
 const fetchFonts = () => {
